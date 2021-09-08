@@ -18,7 +18,7 @@ function main() {
     rl.setPrompt(`SendMessage@${config.webhook_username}: `);
     rl.prompt();
     rl.on('line', function(command, error) {
-      if (command === "!exit" || command === "!quit" || command == '!q') {
+      if (command === "!exit" || command === "!quit"') {
         console.log('bye')
       process.exit(1)
       } if (command == "!clear"){
